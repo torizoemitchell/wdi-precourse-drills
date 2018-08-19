@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photos</title>
+    <link rel="stylesheet" href="photos.css">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Scattered Polaroids Gallery: A flat-style take on a Polaroid gallery" />
+    <meta name="keywords" content="scattered polaroids, image gallery, javascript, random rotation, 3d, backface, flat design" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="component.css" />
+    <script src="modernizr.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class = "container">
+      <img class="image" src=images/puppyeyes.jpg alt="puppydogeyes" height="280" width="280">
+      <img class="background-image" src = images/aarow.png alt="arrow">
+    </div>
+
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li>
+        <a href="#">Social Media<i class="arrow down"></i></a>
+        <ul class="fallback">
+          <li><a href="https://www.linkedin.com/in/victoriazmitchell/">LinkedIn</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Photos</a></li>
+    </ul>
+  </nav>
+
+<label class = "heading">Photos</label>
+
+
+<section id="photostack-1" class="photostack photostack-start">
+  <div>
+    <figure>
+      <a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="images/running1.jpg" alt="img01" height=245 width=240 /></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part I</h2>
+      </figcaption>
+    </figure>
+    <figure>
+      <a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="images/running2.jpg" alt="img02" height=245 width=240 /></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part II</h2>
+      </figcaption>
+    </figure>
+    <figure>
+      <a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="images/running3.jpg" alt="img03" height=245 width=240 /></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part III</h2>
+      </figcaption>
+    </figure>
+    <figure>
+      <a href="http://goo.gl/49lN3k" class="photostack-img"><img src="images/running4.jpg" alt="img04" height=245 width=240 /></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part IV</h2>
+      </figcaption>
+    </figure>
+    <figure>
+      <a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="images/running5.jpg" alt="img05" height=245 width=240 /></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part V</h2>
+      </figcaption>
+    </figure>
+    <figure>
+      <a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="images/running6edit.jpg" alt="img06" height=245 width=240></a>
+      <figcaption>
+        <h2 class="photostack-title">Nala Running Chronicles, Part VI</h2>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<script src="classie.js"></script>
+<script src="photostack.js"></script>
+<script>
+  // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+
+  new Photostack( document.getElementById( 'photostack-1' ), {
+    callback : function( item ) {
+      //console.log(item)
+    }
+  } );
+  new Photostack( document.getElementById( 'photostack-2' ), {
+    callback : function( item ) {
+      //console.log(item)
+    }
+  } );
+  new Photostack( document.getElementById( 'photostack-3' ), {
+    callback : function( item ) {
+      //console.log(item)
+    }
+  } );
+</script>
+
+
+  </body>
+</html>

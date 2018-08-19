@@ -1,0 +1,62 @@
+body{
+  background-color: white;
+  text-align: center;
+}
+
+.heading{
+  font-size: 90px;
+  font-family: 'Waiting for the Sunrise', cursive;
+
+}
+
+
+.container{
+  position: relative;
+  padding: 35px;
+}
+
+.image{
+  border-radius: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background-image{
+  width: 80%;
+  height: 300px;
+
+
+}
+
+/* NAVBAR START*/
+
+nav {background:#FFF; font-family: 'Waiting for the Sunrise', cursive;font-size: 20px;}
+nav ul {text-align:center; display: table; margin: 0 auto;}
+nav ul li {float:left;display:inline;}
+nav ul li:hover {background:white; text-decoration: underline;}
+nav ul li a {display:block;padding:5px 25px;color:#444;  text-decoration:none;}
+nav ul li ul {position:absolute;width:110px;background:#FFF;}
+nav ul li ul li {width:110px;}
+nav ul li ul li a {display:block;padding:0px;color:#444;}
+nav ul li ul li:hover a {background:white;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+i {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 0 5px 10px;
+
+}
+
+/* NAVBAR END*/
